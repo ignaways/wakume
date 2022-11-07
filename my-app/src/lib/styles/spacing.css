@@ -1,0 +1,51 @@
+/* margin */
+.m-auto {
+  margin: auto;
+}
+.m-0_25 {
+  margin: .25em;
+}
+.m-0_5 {
+  margin: .5em;
+}
+.m-0_75 {
+  margin: .75em;
+}
+.m-1 {
+  margin: 1em;
+}
+.m-2 {
+  margin: 2em;
+}
+.m-3 {
+  margin: 3em;
+}
+.m-5 {
+  margin: 5em;
+}
+
+/* padding */
+.p-auto {
+  padding: auto;
+}
+.p-0_25 {
+  padding: .25em;
+}
+.p-0_5 {
+  padding: .5em;
+}
+.p-0_75 {
+  padding: .75em;
+}
+.p-1 {
+  padding: 1em;
+}
+.p-2 {
+  padding: 2em;
+}
+.p-3 {
+  padding: 3em;
+}
+.p-5 {
+  padding: 5em;
+}
