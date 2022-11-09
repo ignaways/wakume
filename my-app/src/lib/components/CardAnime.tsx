@@ -1,19 +1,10 @@
-const styles:any = {
-  card: {
-    backgroundColor: 'gray',
-    boxShadow: '2px 2px 4px #000000',
-    height:'2em',
-    color:'blue',
-    padding:'1em',
-  }
-}
-
+import { CardList } from "../elements/Card"
 const CardAnime = () => {
   return (
     <>
-      <div style={styles.card}>
-        card anime
-      </div>
+      <CardList>
+        CardList anime
+      </CardList>
     </>
   )
 }

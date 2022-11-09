@@ -1,4 +1,6 @@
 import MappingList from "../components/MappingList"
+import '../lib/styles/display.css'
+import '../lib/styles/spacing.css'
 const ListAnime = () => {
   return (
     <>

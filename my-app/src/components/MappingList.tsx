@@ -1,16 +1,23 @@
+import axios from 'axios'
+import { useEffect } from 'react';
 import CardAnime from "../lib/components/CardAnime";
-
-const styles: any = {
-  display: {
-    // width: "50%",
-    margin: "auto",
-    display: "grid",
-    gridTemplateColumns: "auto auto auto",
-    gap:'1em'
-  },
-};
+import "../lib/styles/display.css";
 
 const MappingList = () => {
+  const getApi = async () => {
+    try {
+      const response:any = await axios.get('https://api.myanimelist.net/v2/anime/season/2017/summer?limit=4',{
+        headers: {
+          'content-type': 'application/json',
+          'X-MAL-CLIENT-ID':'71edbf3aeb1b7544dd6ac9fbf140e4b4',
+          'Access-Control-Allow-Origin': '*'
+        }
+      })
+      console.log('response>>',response)
+    } catch (error) {
+      console.log('error>>',error)
+    }
+  }
   const dataMapping = [1, 2, 3, 4, 1, 2, 3, 4].map(() => {
     return (
       <>
@@ -18,11 +25,14 @@ const MappingList = () => {
       </>
     );
   });
+
+  useEffect(()=> {
+    getApi()
+  },[])
+
   return (
     <>
-      <div style={styles.display}>
-        {dataMapping}
-      </div>
+      <div className="container__grid">{dataMapping}</div>
     </>
   );
 };
