@@ -6,6 +6,9 @@ export const CardList = styled.div`
   height: 265px;
   color: blue;
   border-radius: 3px;
+  display: grid;
+  grid-template-columns: 180px auto;
+  width: 100%;
 `
 
 export const CardAiring = styled.div`
