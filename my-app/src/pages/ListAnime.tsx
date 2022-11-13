@@ -1,13 +1,13 @@
 import MappingList from "../components/MappingList"
-import '../lib/styles/display.css'
-import '../lib/styles/spacing.css'
+import { ContainerCard } from "../lib/styles/Container"
+
 const ListAnime = () => {
   return (
     <>
-      <div className="m-auto">
+      <ContainerCard>
         ListAnime Page
         <MappingList />
-      </div>
+      </ContainerCard>
     </>
   )
 }

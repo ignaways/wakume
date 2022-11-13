@@ -27,24 +27,13 @@ export const CardList = styled.div`
   }
 `;
 export const MediaCard = styled.div`
-  /* background-color: 'yellow';
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; */
   background-color: grey;
   box-shadow: 0 4px 6px rgb(49 54 68 / 5%), 0 5px 20px rgb(49 54 68 / 8%);
   height: 265px;
   color: blue;
   border-radius: 3px;
-  display:inline-grid;
+  display: inline-grid;
   grid-template-columns: 185px auto;
-  transform: box-shadow .6s ease;
+  transform: box-shadow 0.6s ease;
 `;
 
-export const CardAiring = styled.div`
-  background-color: grey;
-  box-shadow: 2px 2px 4px #000000;
-  height: 2em;
-  color: blue;
-  padding: 1em;
-`;

@@ -1,43 +1,53 @@
-import { MediaCard } from "../elements/Card";
+import { MediaCard } from "../styles/Card";
+import { CoverList } from "../styles/Cover";
+import { OverlayList } from "../styles/Overlay";
+
+import MediaImage from "../elements/MediaImage";
+
 const CardAnime = ({ detail }: any) => {
   const anime = detail.node;
   return (
     <>
-        <MediaCard>
-          <div style={{
-            backgroundColor:'green',
-            // position:'relative',
-            // width:'100%',
-            // height: '2em',
-            // float: 'left',
-            // opacity:.5,
-            // top:0,
-            padding:'12px',
-            textAlign:'left',
-            fontSize:'1rem',
-            fontWeight:600
-          }}>
-            <a style={{
-              // position:'relative',
-              color:'white',
-            }}>
-              {anime.title}
-            </a>
+      <MediaCard>
+        <CoverList>
+          <MediaImage props={[anime?.title, anime?.main_picture?.large]} />
+          {/* <div
+            style={{
+              // backgroundColor: "blue",
+              color: "white",
+              zIndex: 3,
+              padding: "12px",
+              background:'rgba(0,0,0,0.6)',
+              textAlign: "left",
+              fontWeight: "600",
+              fontSize: ".95rem",
+              // position:'relative'
+            }}
+          > */}
+          <OverlayList>
             <div>
-              <a>
-                Mappa
-              {/* {anime.studios} */}
-              </a>
+              {anime.title}
             </div>
-        {/* <img src={`${anime.main_picture.large}`} alt={`${anime.title}`} 
+            <div
+              style={{
+                fontSize: ".8rem",
+                fontWeight: "600",
+                marginTop: "8px",
+              }}
+            >
+              Mappa
+            </div>
+            {/* {anime.studios} */}
+          {/* </div> */}
+          {/* <img src={`${anime.main_picture.large}`} alt={`${anime.title}`} 
           style={{
             objectFit:'cover',
             objectPosition:'center'
           }}
           /> */}
-
-        </div>
-        </MediaCard>
+          </OverlayList>
+        </CoverList>
+      </MediaCard>
       {/* </CardList> */}
     </>
   );

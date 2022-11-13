@@ -1,22 +1,21 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import CardAnime from "../lib/components/CardAnime";
-import { CardList } from "../lib/elements/Card";
+import { CardList } from "../lib/styles/Card";
 import "../lib/styles/display.css";
 
 const MappingList = () => {
   const [listAnime, setListAnime] = useState([]);
   const getApi = async () => {
     try {
-      const response: any = await axios.get(
-        "http://localhost:4000/anime/list?year=2022&season=fall"
-      );
+      const response: any = await axios.get("http://localhost:4000/anime/list?year=2022&season=fall");
       setListAnime(response.data.data);
     } catch (error) {
       console.log("error>>", error);
       throw error
     }
   };
+
   const dataMapping = listAnime.map((e: any) => {
     return (
       <>
@@ -29,6 +28,7 @@ const MappingList = () => {
   });
 
   useEffect(() => {
+
     getApi();
   }, []);
 
