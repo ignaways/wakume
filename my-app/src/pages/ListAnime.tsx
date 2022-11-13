@@ -1,4 +1,4 @@
-import MappingList from "../components/MappingList"
+import MappingData from "../components/MappingData"
 import { ContainerCard } from "../lib/styles/Container"
 
 const ListAnime = () => {
@@ -6,7 +6,7 @@ const ListAnime = () => {
     <>
       <ContainerCard>
         ListAnime Page
-        <MappingList />
+        <MappingData />
       </ContainerCard>
     </>
   )

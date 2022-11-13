@@ -4,7 +4,7 @@ import CardAnime from "../lib/components/CardAnime";
 import { CardList } from "../lib/styles/Card";
 import "../lib/styles/display.css";
 
-const MappingList = () => {
+const MappingData = () => {
   const [listAnime, setListAnime] = useState([]);
   const getApi = async () => {
     try {
@@ -41,4 +41,4 @@ const MappingList = () => {
   );
 };
 
-export default MappingList;
+export default MappingData;
