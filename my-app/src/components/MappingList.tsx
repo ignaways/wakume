@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import CardAnime from "../lib/components/CardAnime";
+import { CardList } from "../lib/elements/Card";
 import "../lib/styles/display.css";
 
 const MappingList = () => {
@@ -33,9 +34,9 @@ const MappingList = () => {
 
   return (
     <>
-      <div className="container__grid">
+      <CardList>
         {dataMapping}
-      </div>
+      </CardList>
     </>
   );
 };

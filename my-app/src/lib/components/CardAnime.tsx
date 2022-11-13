@@ -1,20 +1,9 @@
-import { CardList } from "../elements/Card";
+import { MediaCard } from "../elements/Card";
 const CardAnime = ({ detail }: any) => {
   const anime = detail.node;
   return (
     <>
-      <CardList>
-        <div 
-        style={{
-          backgroundColor:'yellow',
-          display:'flex',
-          flexDirection:'column',
-          justifyContent:'flex-end'
-          // position:'relative', 
-          // height:'265px',
-          // float:'left'
-        }}
-        >
+        <MediaCard>
           <div style={{
             backgroundColor:'green',
             // position:'relative',
@@ -40,7 +29,6 @@ const CardAnime = ({ detail }: any) => {
               {/* {anime.studios} */}
               </a>
             </div>
-            </div>
         {/* <img src={`${anime.main_picture.large}`} alt={`${anime.title}`} 
           style={{
             objectFit:'cover',
@@ -49,8 +37,8 @@ const CardAnime = ({ detail }: any) => {
           /> */}
 
         </div>
-        {/* {anime.title} */}
-      </CardList>
+        </MediaCard>
+      {/* </CardList> */}
     </>
   );
 };

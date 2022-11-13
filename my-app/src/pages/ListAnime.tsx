@@ -4,7 +4,7 @@ import '../lib/styles/spacing.css'
 const ListAnime = () => {
   return (
     <>
-      <div className="container__main m-auto">
+      <div className="m-auto">
         ListAnime Page
         <MappingList />
       </div>

@@ -1,6 +1,7 @@
 /* margin */
 .m-auto {
-  margin: auto;
+  /* margin: auto; */
+  margin: 0 5vw;
 }
 .m-0_25 {
   margin: .25em;

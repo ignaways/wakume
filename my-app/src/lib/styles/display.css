@@ -4,51 +4,52 @@
 
 .container__grid {
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 2.5em;
+  /* grid-template-columns: auto auto auto; */
+  /* grid-template-columns: repeat(3,minmax(390px,460px));
+  gap: 2.5em; */
 }
 
 @media only screen and (max-width: 1400px){
   .container__main{
     width: 80%;  
   }
-  .container__grid {
-    grid-template-columns: auto auto;
-  }
+  /* .container__grid {
+    grid-template-columns: repeat(2,1fr);
+  } */
 }
 
 @media only screen and (max-width: 1200px){
   .container__main{
     width: 80%;  
   }
-  .container__grid {
+  /* .container__grid {
     grid-template-columns: auto auto;
-  }
+  } */
 }
 
 @media only screen and (max-width: 992px){
   .container__main{
     width: 80%; 
   }
-  .container__grid {
+  /* .container__grid {
     grid-template-columns: auto;
-  }
+  } */
 }
 
 @media only screen and (max-width: 768px){
   .container__main{
     width: 85%;  
   }
-  .container__grid {
+  /* .container__grid {
     grid-template-columns: auto;
-  }
+  } */
 }
 
 @media only screen and (max-width: 600px){
   .container__main{
     width: 90%;  
   }
-  .container__grid {
+  /* .container__grid {
     grid-template-columns: auto;
-  }
+  } */
 }
