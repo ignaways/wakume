@@ -7,7 +7,12 @@ const Body = ({ anime }: Anime) => {
     <MediaBody>
       <div>
         <HeaderCountDown
-          props={[anime.num_episodes, anime.source, anime.start_date, anime.broadcast]}
+          props={[
+            anime.num_episodes,
+            anime.source,
+            anime.start_date,
+            anime.broadcast,
+          ]}
         />
       </div>
       <Synopsis props={anime.synopsis} />
