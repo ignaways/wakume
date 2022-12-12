@@ -59,11 +59,13 @@ export const remainingSynopsisHandler = (synopsis: string) => {
 };
 
 export const episodeOngoing = (date: string) => {
+  console.log("🚀 ~ file: helpers.tsx ~ line 62 ~ episodeOngoing ~ date", date)
   const startDate = new Date(date);
+  console.log("🚀 ~ file: helpers.tsx ~ line 63 ~ episodeOngoing ~ startDate", startDate)
   const differences = dateNow.getTime() - startDate.getTime();
   const totalDay = Math.ceil(differences / (1000 * 3600 * 24));
   const totalEpisode = Math.ceil(totalDay / 7 + 1);
-  // console.log("🚀 ~ file: helpers.tsx:67 ~ episodeOngoing ~ totalEpisode", totalEpisode)
+  console.log("🚀 ~ file: helpers.tsx:67 ~ episodeOngoing ~ totalEpisode", totalEpisode)
   return totalEpisode;
 };
 
@@ -90,7 +92,7 @@ export const countDownEpisode = (dateRelease: dateRelease) => {
   if (distance < 0) {
     return "done";
   } else {
-    return days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    return days + " days, " + hours + " hours " + minutes + "m " + seconds + "s ";
   }
 };
 
